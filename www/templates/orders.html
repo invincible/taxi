@@ -1,0 +1,14 @@
+<ion-view view-title="Заказы">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="order in orders" href="#/app/orders/{{order.id}}">
+        <i class="icon ion-person-stalker"></i>
+        {{order.title}} 
+        <span class="item-note">
+        	<a href="#" class="button button-positive">Взять</a>
+        </span>
+        <!-- <ion-option-button class="button-positive">Взять</ion-option-button> -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
