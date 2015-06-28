@@ -30,6 +30,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.camera', {
+        url: "/camera",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/camera.html",
+                controller: 'CameraCtrl'
+            }
+        }
+    })
+
   .state('app.profile', {
     url: "/profile",
     views: {
@@ -44,16 +54,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent': {
           templateUrl: "templates/orders.html",
           controller: 'OrdersCtrl'
-        }
-      }
-    })
-
-    .state('app.camera', {
-      url: "/camera",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/camera.html",
-          controller: 'CameraCtrl'
         }
       }
     })

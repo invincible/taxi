@@ -53,8 +53,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OrderCtrl', function($scope, $stateParams) {
-});
-
+})
 
 .controller('GeoCtrl', function($cordovaGeolocation) {
 
@@ -94,7 +93,7 @@ angular.module('starter.controllers', [])
       }, function (error) {
       // error
     });
-});
+})
 
 .controller('CameraCtrl', function($ionicPlatform, $rootScope, $scope, $cordovaCamera) {
     $ionicPlatform.ready(function() {
@@ -119,4 +118,4 @@ angular.module('starter.controllers', [])
         }
  
     });
-})
+});
