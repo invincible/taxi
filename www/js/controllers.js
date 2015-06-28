@@ -50,6 +50,9 @@ angular.module('starter.controllers', [])
     { title: 'Парк Кирова, к главному входу', id: 5 },
     { title: 'Кинотеатр Родина, главный вход', id: 6 }
   ];
+  $scope.refresh = function(){
+    $scope.$broadcast('scroll.refreshComplete');
+  };
 })
 
 .controller('OrderCtrl', function($scope, $stateParams) {
