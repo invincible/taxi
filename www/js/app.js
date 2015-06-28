@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.camera', {
+      url: "/camera",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/camera.html",
+          controller: 'CameraCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: "/orders/:orderId",
     views: {
